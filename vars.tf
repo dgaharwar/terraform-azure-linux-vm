@@ -1,4 +1,13 @@
 # required variables
+variable "subscriptionId" {}
+variable "tenantId" {}
+variable "clientId" {}
+variable "clientSecret" {}
+
+variable "vmName" {
+  default = ""
+}
+
 variable "hostname" {
   description = "name of the machine to create"
 }
