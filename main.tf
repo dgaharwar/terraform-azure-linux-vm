@@ -12,7 +12,7 @@ provider "azurerm" {
   subscriptionId = "${var.subscriptionId}"
   tenantId       = "${var.tenantId}"
   clientId       = "${var.clientId}"
-  secretValue    = "${var.secretValue}"
+  clientSecret    = "${var.clientSecret}"
 }
   
 
