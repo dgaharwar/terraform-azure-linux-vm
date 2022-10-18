@@ -9,10 +9,10 @@ terraform {
 
 provider "azurerm" {
   version         = "3.27.0"
-  subscriptionId = "${var.subscriptionId}"
-  tenantId       = "${var.tenantId}"
-  clientId       = "${var.clientId}"
-  clientSecret    = "${var.clientSecret}"
+  subscription_id = "${var.subscriptionId}"
+  tenant_id       = "${var.tenantId}"
+  client_id       = "${var.clientId}"
+  client_secret    = "${var.clientSecret}"
 }
   
 
