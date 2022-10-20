@@ -1,14 +1,15 @@
 terraform {
-  required_providers {
-    azurerm = {
-      source = "hashicorp/azurerm"
-      version = "3.27.0"
-    }
-  }
+   required_providers {
+        azurerm = {
+           source  = "hashicorp/azurerm"
+           version = "=3.19.1"
+         }
+      }
+     required_version = ">= 0.14.1"
 }
 
 provider "azurerm" {
-  version         = "3.27.0"
+  #version         = "3.27.0"
   subscription_id = "${var.subscriptionId}"
   tenant_id       = "${var.tenantId}"
   client_id       = "${var.clientId}"
